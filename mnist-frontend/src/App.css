@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.left h2 {
+  color: #aaaaaa;
+  letter-spacing: 2px;
+}
+
+canvas {
+  border: 2px solid #333333;
+  border-radius: 8px;
+  cursor: crosshair;
+  background-color: #ffffff;
+}
+
+.clear-btn {
+  padding: 10px 32px;
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+.clear-btn:hover {
+  background-color: #333333;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prediction-box {
+  flex: 1;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.prediction-box .label {
+  color: #888888;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.prediction-box .number {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.prediction-box .confidence {
+  color: #888888;
+  font-size: 14px;
+}
+
+.rankings-box {
+  flex: 1;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #333333;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.rankings-box .label {
+  color: #888888;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.rank-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.rank-num {
+  color: #555555;
+  width: 24px;
+  font-size: 12px;
+}
+
+.rank-digit {
+  width: 20px;
+  font-weight: bold;
+}
+
+.bar-bg {
+  flex: 1;
+  height: 6px;
+  background-color: #333333;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.bar-fill.top {
+  background-color: #4ade80;
+}
+
+.bar-fill.rest {
+  background-color: #334155;
+}
+
+.rank-prob {
+  color: #888888;
+  font-size: 12px;
+  width: 48px;
+  text-align: right;
+}
+.left {
+  min-width: 520px;
+}
