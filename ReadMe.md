@@ -15,4 +15,4 @@ Wrapped in a React + Flask web app where you draw a digit and the model predicts
 
 ## Try it
 
-[Try](#https://mnist-live-demo-ml-model.onrender.com)
+[https://mnist-live-demo-ml-model.onrender.com](#https://mnist-live-demo-ml-model.onrender.com)
