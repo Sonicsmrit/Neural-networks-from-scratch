@@ -4,13 +4,13 @@ import numpy as np
 from PIL import Image, ImageFilter
 import base64, io
 
-W1 = np.load("mnist-backend\weights\W1.npy")
-W2 = np.load("mnist-backend\weights\W2.npy")
-W3 = np.load("mnist-backend\weights\W3.npy")
+W1 = np.load("weights/W1.npy")
+W2 = np.load("weights/W2.npy")
+W3 = np.load("weights/W3.npy")
+b1 = np.load("weights/b1.npy")
+b2 = np.load("weights/b2.npy")
+b3 = np.load("weights/b3.npy")
 
-b1 = np.load("mnist-backend\weights/b1.npy")
-b2 = np.load("mnist-backend\weights/b2.npy")
-b3 = np.load("mnist-backend\weights/b3.npy")
 
 def Softmax(Z):
     exp_Z = np.exp(Z - np.max(Z, axis=0, keepdims=True))
